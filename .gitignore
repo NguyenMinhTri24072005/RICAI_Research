@@ -103,9 +103,10 @@ temp/
 # Các tệp zip và thư mục ảnh gốc hàng GB này lưu trên Google Drive
 # -----------------------------------------------------------------------------
 /DATASETS/
-/DATASET_BUILDER/1_Raw_Images/
-/DATASET_BUILDER/2_Manual_Records/
-/DATASET_BUILDER/3_AI_Extracted/
+/DATASET_BUILDER/1_Raw_Images/*
+!/DATASET_BUILDER/1_Raw_Images/.gitkeep
+# /DATASET_BUILDER/2_Manual_Records/
+# /DATASET_BUILDER/3_AI_Extracted/
 /DETECTED_OBJECTS/
 /TEST_IMAGES/
 /WAITING_IMAGES/
