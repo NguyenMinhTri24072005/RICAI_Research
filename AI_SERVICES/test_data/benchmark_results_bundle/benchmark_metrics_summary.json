@@ -1,0 +1,23 @@
+{
+    "evaluation_timestamp": "2026-10-16T23:48:58.835535",
+    "total_samples": 74,
+    "valid_samples": 73,
+    "core_metrics": {
+        "r2_score": 0.9988,
+        "mae_seeds": 3.5342,
+        "rmse_seeds": 4.6523,
+        "mape_percent": 1.7703,
+        "ci90_coverage_pct": 100.0,
+        "within_3_seeds_pct": 54.79,
+        "within_5_seeds_pct": 79.45,
+        "within_5_pct_tolerance": 98.63,
+        "within_10_pct_tolerance": 100.0,
+        "avg_latency_ms": 28229.07
+    },
+    "method_mae_comparison": {
+        "bayesian_hybrid_fromthanh": 3.5342,
+        "extra_trees_regression": 18.7032,
+        "geometry_heuristic": 132.1111,
+        "electronic_scale_weight": 0.0
+    }
+}

@@ -1,0 +1,36 @@
+{
+  "bundle_id": "rice_vision_ols_20261012_071306_f9ce33",
+  "run_id": "20261012_071306_f9ce33",
+  "model_id": "ols",
+  "schema_version": "31v1",
+  "schema_hash": "dee4b46be6aaef6cb4f696696aaa11cbcfa1e9d718deea96ca9ec5238046f5a8",
+  "dataset_sha256": "2c7c43fd908581ff55460820870feb27deb191b5391159f23df8ad2f26662ba4",
+  "fit_scope": "outer_train",
+  "benchmark_type": "PROVISIONAL",
+  "files": {
+    "pipeline": {
+      "path": "pipeline.joblib",
+      "sha256": "7216ef99f4680e3d004cea3043b6b67f45c6f88d001de3a16ddf3831317823be"
+    },
+    "model": {
+      "path": "model.joblib",
+      "sha256": "a6b30e1ff527503907be5bf043854890e90ca80f28162f2c389eca8fd4cba709"
+    },
+    "scaler": {
+      "path": "scaler.joblib",
+      "sha256": "f93c4755944836e8c340f7b8b302dd0d170f7ec000bb5e1ca543a91a0c90694b"
+    },
+    "config": {
+      "path": "config.json",
+      "sha256": "f87533ed9e0efab46a19bad49cf531e61650469270970b99f0354532cd305930"
+    },
+    "metrics": {
+      "path": "metrics.json",
+      "sha256": "bac6ce36a636773b94d638a368dbd640b25297b6200b49bd542b8d3cff68c225"
+    },
+    "feature_schema": {
+      "path": "feature_schema.json",
+      "sha256": "6a97e25a67a13024e52016700eaa01e245853013539905923d6e18c9c674dcb2"
+    }
+  }
+}

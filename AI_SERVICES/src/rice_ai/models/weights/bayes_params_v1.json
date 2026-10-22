@@ -1,0 +1,66 @@
+{
+  "schema_version": "bayes_v1",
+  "created_at": "2026-10-14T07:10:32.555069+00:00",
+  "source_dataset_records": 388,
+  "hyperparameters": {
+    "tau_floor": 0.1,
+    "nu0": 4.0,
+    "disagreement_sigma_gate": 3.0,
+    "lot_unseen_threshold_mm": 5.0,
+    "source_lots": [
+      18,
+      23,
+      33,
+      42
+    ]
+  },
+  "branch_v": {
+    "phys_col": "lV",
+    "use_vg": true,
+    "b0": -0.897866,
+    "tau": 0.316635,
+    "s0": 0.074608,
+    "sg": 0.0,
+    "lam": 1.05,
+    "nu0": 4.0,
+    "z_cols": [
+      "o"
+    ],
+    "g_mu": [
+      3.200798
+    ],
+    "g_sd": [
+      0.346623
+    ],
+    "g_weights": [
+      0.341835
+    ]
+  },
+  "branch_w": {
+    "phys_col": "lW",
+    "use_vg": false,
+    "b0": 3.664334,
+    "tau": 0.1,
+    "s0": 0.000343,
+    "sg": 0.0,
+    "lam": 1.0,
+    "nu0": 4.0,
+    "z_cols": [
+      "lW",
+      "lV"
+    ],
+    "g_mu": [
+      2.162589,
+      10.236924
+    ],
+    "g_sd": [
+      0.644955,
+      0.976865
+    ],
+    "g_weights": [
+      -0.025854,
+      0.030128
+    ]
+  },
+  "checksum_sha256": "daf0bc8b2c597a71e46b4bb7d46f370fa078d9c2905c5705461fc4f405c8d8b8"
+}

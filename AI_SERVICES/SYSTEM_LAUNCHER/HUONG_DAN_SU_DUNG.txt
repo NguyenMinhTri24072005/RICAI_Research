@@ -1,0 +1,40 @@
+===============================================================================
+              TRÌNH ĐIỀU KHIỂN KHỞI ĐỘNG HỆ THỐNG RICE VISION AI
+===============================================================================
+
+Thư mục này tập trung toàn bộ các file cài đặt và khởi động của hệ thống, giúp bạn
+không cần phải vào từng thư mục con để tìm file chạy nữa.
+
+-------------------------------------------------------------------------------
+0. CÀI ĐẶT LẦN ĐẦU TIÊN (NẾU MÁY MỚI CHƯA CÀI MÔI TRƯỜNG)
+-------------------------------------------------------------------------------
+👉 Chạy file: 0_SETUP_AI_SERVICE.bat
+- Tác dụng: Tự động phát hiện Python 3.12, tạo môi trường ảo .venv và cài đặt
+  đầy đủ các thư viện trong requirements.txt (PyTorch, Ultralytics, OpenCV...).
+- Chỉ cần chạy 1 lần duy nhất khi mới thiết lập máy.
+
+-------------------------------------------------------------------------------
+1. KHỞI ĐỘNG NHANH TOÀN BỘ CHỈ VỚI 1 CLICK (KHUYÊN DÙNG HẰNG NGÀY)
+-------------------------------------------------------------------------------
+👉 Chạy file: START_ALL_1_CLICK.bat
+- Tác dụng: Tự động khởi động toàn bộ:
+  + Dịch vụ AI (Python Core - Port 8000)
+  + Giao diện Web Dashboard (React + Node.js - Port 5173 / 3000)
+  + Server kết nối Camera Điện thoại (Port 8765 HTTPS)
+- Sau khi khởi động xong, hệ thống sẽ TỰ ĐỘNG MỞ TRÌNH DUYỆT vào thẳng giao diện:
+  http://localhost:5173
+
+-------------------------------------------------------------------------------
+2. KHỞI ĐỘNG TỪNG PHẦN RIÊNG LẺ (NẾU MUỐN DEBUG)
+-------------------------------------------------------------------------------
+- File 1_START_AI_SERVICE.bat       : Chỉ bật dịch vụ AI (Port 8000)
+- File 2_START_WEB_DASHBOARD.bat    : Chỉ bật Giao diện Web (Port 5173)
+- File 3_START_PHONE_CAMERA.bat     : Chỉ bật Server Camera Điện thoại (Port 8765)
+
+-------------------------------------------------------------------------------
+3. TẮT HỆ THỐNG
+-------------------------------------------------------------------------------
+👉 Chạy file: STOP_ALL_SYSTEM.bat
+- Tác dụng: Tự động tắt sạch các tiến trình đang chạy và giải phóng các cổng
+  mạng (8000, 3000, 5173, 8765) để lần sau bật lại không bị lỗi xung đột cổng.
+===============================================================================

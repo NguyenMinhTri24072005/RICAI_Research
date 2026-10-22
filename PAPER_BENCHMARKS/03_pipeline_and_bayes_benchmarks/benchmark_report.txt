@@ -1,0 +1,57 @@
+================================================================================
+🌾 BÁO CÁO KẾT QUẢ KIỂM NGHIỆM HỆ THỐNG RICE VISION AI (BAYESIAN SOTA)
+================================================================================
+Thời gian kiểm định       : 16/10/2026 23:48:59
+Tổng số mẫu thử nghiệm    : 74 mẫu
+Số mẫu dự đoán hợp lệ    : 73 mẫu
+Tốc độ xử lý trung bình   : 28229.1 ms / mẫu (0.0 FPS)
+
+--------------------------------------------------------------------------------
+1. HIỆU NĂNG TỔNG QUAN (CORE ACCURACY METRICS — BAYESIAN HYBRID)
+--------------------------------------------------------------------------------
+- Hệ số tương quan (R² Score)       : 0.9988
+- Sai số tuyệt đối TB (MAE)         : 3.53 hạt
+- Sai số căn quân phương (RMSE)     : 4.65 hạt
+- Tỷ lệ sai số phần trăm (MAPE)     : 1.77%
+- Độ phủ Khoảng tin cậy 90% (CI90)  : 100.0%
+- Tỷ lệ mẫu đạt sai số <= 3 hạt     : 54.8%
+- Tỷ lệ mẫu đạt sai số <= 5 hạt     : 79.5%
+- Tỷ lệ mẫu đạt dung sai <= 5%      : 98.6%
+- Tỷ lệ mẫu đạt dung sai <= 10%     : 100.0%
+
+--------------------------------------------------------------------------------
+2. SO SÁNH ĐỐI ĐẦU VỚI CÁC PHƯƠNG PHÁP BASELINE
+--------------------------------------------------------------------------------
+- Bayesian Hybrid (FromThanh SOTA)  : MAE = 3.53 hạt
+- Extra Trees (Mô hình Hồi quy cũ)  : MAE = 18.70 hạt
+- Thuần Hình Học (Geometry Packing) : MAE = 132.11 hạt
+- Cân Điện Tử (Weight-based)        : MAE = 0.00 hạt
+
+--------------------------------------------------------------------------------
+3. TOP 5 MẪU ĐẠT ĐỘ CHÍNH XÁC CAO NHẤT
+--------------------------------------------------------------------------------
+Sample_ID  Actual_Count  Final_Estimate  CI90_Lower  CI90_Upper  Abs_Error  Pct_Error
+    M0026         140.0           140.0       119.0       165.0        0.0        0.0
+    M0032         160.0           160.0       135.0       188.0        0.0        0.0
+    M0031         160.0           160.0       135.0       188.0        0.0        0.0
+    M0030         160.0           160.0       135.0       188.0        0.0        0.0
+    M0020         110.0           110.0        88.0      6102.0        0.0        0.0
+
+--------------------------------------------------------------------------------
+4. TOP 5 MẪU CẦN LƯU Ý (SAI SỐ LỚN NHẤT ĐỂ PHÂN TÍCH)
+--------------------------------------------------------------------------------
+Sample_ID  Actual_Count  Final_Estimate  CI90_Lower  CI90_Upper  Abs_Error  Pct_Error
+    M0069         420.0           409.0       347.0       482.0       11.0   2.619048
+    M0065         420.0           409.0       347.0       482.0       11.0   2.619048
+    M0068         420.0           409.0       347.0       482.0       11.0   2.619048
+    M0066         420.0           409.0       347.0       482.0       11.0   2.619048
+    M0067         420.0           409.0       347.0       482.0       11.0   2.619048
+
+================================================================================
+📂 TẬP TIN KẾT QUẢ ĐÃ LƯU TRỮ TẠI: /content/drive/MyDrive/NGHIÊN CỨU KHOA HỌC/GROUP_MEMBERS/NGUYEN MINH TRI/MAIN_SOURCES/AI_SERVICES/test_data/benchmark_results
+- Bảng chi tiết Excel : benchmark_100_results.xlsx
+- Bảng chi tiết CSV   : benchmark_100_results.csv
+- Tóm tắt chỉ số JSON : benchmark_metrics_summary.json
+- Báo cáo nghiệm thu  : benchmark_report.txt
+- Đồ thị trực quan    : benchmark_visual_analytics.png
+================================================================================

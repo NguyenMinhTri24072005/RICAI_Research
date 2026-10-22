@@ -1,0 +1,183 @@
+# =============================================================================
+# 🌾 RICE VISION AI - BỘ LỌC .gitignore CHUẨN MỰC CHO ĐỒ ÁN / NCKH
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# 1. MÔI TRƯỜNG ẢO PYTHON (VIRTUAL ENVIRONMENTS)
+# Tuyệt đối không đẩy thư viện bên thứ 3 (PyTorch, OpenCV...) lên Git
+# -----------------------------------------------------------------------------
+.venv/
+**/.venv/
+venv/
+**/venv/
+env/
+**/env/
+ENV/
+**/ENV/
+
+# -----------------------------------------------------------------------------
+# 2. THƯ VIỆN & BẢN BUILD JAVASCRIPT / NODE.JS
+# Người dùng sẽ tự chạy `npm install` và `npm run build`
+# -----------------------------------------------------------------------------
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+dist-ssr/
+.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# -----------------------------------------------------------------------------
+# 3. BẢO MẬT & THÔNG TIN CẤU HÌNH CÁ NHÂN (SECRETS & LOCAL CONFIGS)
+# Chặn rò rỉ token cá nhân (Ngrok, Cloudflare, API Keys, Certificates)
+# -----------------------------------------------------------------------------
+.env
+**/.env
+.env.*
+**/.env.*
+!.env.example
+!**/.env.example
+
+*.pem
+*.key
+*.pfx
+*.p12
+*.crt
+credentials.json
+secrets.json
+*service-account*.json
+*service_account*.json
+/AI_SERVICES/capture_server/certificates/
+
+# -----------------------------------------------------------------------------
+# 4. TẬP TIN RÁC CỦA HỆ ĐIỀU HÀNH & IDE (OS & EDITORS)
+# -----------------------------------------------------------------------------
+desktop.ini
+**/desktop.ini
+.DS_Store
+**/.DS_Store
+Thumbs.db
+**/.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.suo
+*.user
+*.sw?
+
+# -----------------------------------------------------------------------------
+# 5. CACHE TRÌNH BIÊN DỊCH & KIỂM THỬ (PYTHON BYTECODE & JUPYTER)
+# -----------------------------------------------------------------------------
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+*.pyo
+
+.pytest_cache/
+**/.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.cache/
+**/.cache/
+
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+tmp/
+**/tmp/
+temp/
+**/temp/
+*.tmp
+*.bak
+
+# -----------------------------------------------------------------------------
+# 6. DỮ LIỆU HUẤN LUYỆN RAW & ẢNH GỐC NẶNG (DATASETS & RAW IMAGES)
+# Các tệp zip và thư mục ảnh gốc hàng GB này lưu trên Google Drive
+# -----------------------------------------------------------------------------
+/DATASETS/
+/DATASET_BUILDER/1_Raw_Images/
+/DATASET_BUILDER/2_Manual_Records/
+/DATASET_BUILDER/3_AI_Extracted/
+/DETECTED_OBJECTS/
+/TEST_IMAGES/
+/WAITING_IMAGES/
+/AI_SERVICES/RICE_ESTIMATION_APPLICATION/backend/uploads/
+
+# Dữ liệu ảnh thô trong test_data của AI_SERVICES
+/AI_SERVICES/test_data/1_Raw_Images/
+/AI_SERVICES/test_data/2_Manual_Records/
+/AI_SERVICES/test_data/benchmark_results/
+!/AI_SERVICES/test_data/**/.gitkeep
+!/AI_SERVICES/test_data/README.md
+
+# Giữ lại bảng dữ liệu CSV đã làm sạch cuối cùng phục vụ hội tụ mô hình
+!/DATASET_BUILDER/4_Final_Dataset/*.csv
+
+# -----------------------------------------------------------------------------
+# 7. TRỌNG SỐ MÔ HÌNH AI & TỆP TIN NHỊ PHÂN NẶNG (> 40MB - 500MB)
+# Vượt quá giới hạn GitHub (100MB) - Dẫn link tải Google Drive trong README.md
+# -----------------------------------------------------------------------------
+/MODELS/
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.h5
+*.hdf5
+*.keras
+*.joblib
+*.pkl
+*.pickle
+*.npy
+*.npz
+
+checkpoints/
+models/checkpoints/
+
+# -----------------------------------------------------------------------------
+# 8. KẾT QUẢ SUY LUẬN & RUNTIME LOGS (INFERENCE OUTPUTS & EXPERIMENTS)
+# Thư mục sinh tự động khi chạy app / huấn luyện cũ
+# -----------------------------------------------------------------------------
+/RESULTS/
+/AI_SERVICES/results/*
+!/AI_SERVICES/results/.gitkeep
+!/AI_SERVICES/results/README.md
+
+runs/
+outputs/
+logs/
+**/logs/
+lightning_logs/
+wandb/
+tensorboard/
+runtime/
+
+# -----------------------------------------------------------------------------
+# 9. TỆP TIN NÉN SAO LƯU & GHI ÂM CÁ NHÂN (ARCHIVES & MEDIA)
+# -----------------------------------------------------------------------------
+_archive/
+**/_archive/
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+*.m4a
+*.mp3
+*.mp4
+*.wav
+*.mov
+
+# Toàn bộ thư mục ghi chú cá nhân
+/NOTES/
+
+/AI_SERVICES/archive_legacy/COMBINE_FOR_AI_Project.txt

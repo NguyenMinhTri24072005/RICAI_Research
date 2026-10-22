@@ -1,0 +1,11 @@
+{
+  "run_id": "20261012_071306_f9ce33",
+  "timestamp_utc": "2026-10-12 07:17:08Z",
+  "dataset_sha256": "2c7c43fd908581ff55460820870feb27deb191b5391159f23df8ad2f26662ba4",
+  "random_seed": 42,
+  "test_size": 0.2,
+  "cv_folds": 5,
+  "split_mode": "GROUPED",
+  "selected_model_id": "extra_trees",
+  "total_trained_models": 18
+}

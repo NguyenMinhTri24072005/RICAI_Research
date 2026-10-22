@@ -1,0 +1,9 @@
+{
+  "dataset_path": "/content/drive/.shortcut-targets-by-id/1Mjy9pP3Q0CdXo71t18ri_p68M0CB947F/NGHI\u00caN C\u1ee8U KHOA H\u1eccC/GROUP_MEMBERS/NGUYEN MINH TRI/MAIN_SOURCES/DATASET_BUILDER/4_Final_Dataset/final_regression_dataset.csv",
+  "dataset_sha256": "2c7c43fd908581ff55460820870feb27deb191b5391159f23df8ad2f26662ba4",
+  "initial_rows": 593,
+  "found_rows": 593,
+  "clean_rows": 593,
+  "features_count": 31,
+  "target_column": "Actual_Count"
+}

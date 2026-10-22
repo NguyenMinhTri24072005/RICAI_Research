@@ -1,0 +1,6 @@
+﻿Sample_ID,Actual_Count,Final_Estimate,Regression_Estimate,Geometry_Estimate,Weight_Estimate,Method_Used,Abs_Error,Pct_Error,Latency_ms,Status
+M0001,85.0,85,85.3,173,,regression_ExtraTrees,0.0,0.0,29004.655643000093,SUCCESS
+M0003,85.0,88,88.3,274,,regression_ExtraTrees,3.0,3.5294117647058822,7782.497374999821,SUCCESS
+M0010,105.0,104,104.4,196,,regression_ExtraTrees,1.0,0.9523809523809524,8006.202490000078,SUCCESS
+M0012,115.0,115,115.0,232,,regression_ExtraTrees,0.0,0.0,31576.751827999942,SUCCESS
+M0016,125.0,125,125.1,325,,regression_ExtraTrees,0.0,0.0,33520.18409600009,SUCCESS
